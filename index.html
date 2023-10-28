@@ -1,6 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
+    <style>
+      #loading-overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: #2b2730;
+        color: #e1e0ff;
+        font-size: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Explore my portfolio" />
@@ -26,10 +42,10 @@
 
       gtag("config", "G-9VREZJDGQW");
     </script>
-    <script type="module" crossorigin src="/assets/index-c5912099.js"></script>
-    <link rel="stylesheet" href="/assets/index-0e731506.css">
+    <script type="module" crossorigin src="/assets/index-9678f24e.js"></script>
+    <link rel="stylesheet" href="/assets/index-b23203a2.css">
   </head>
-  <body data-bs-theme="dark">
+  <body>
     <main>
       <div id="scene-container"></div>
     </main>
@@ -40,6 +56,16 @@
         >Creative Commons Attribution</a
       >.
     </footer>
+
+    <div id="loading-overlay">
+      <div class="progress" role="progressbar">
+        <div
+          id="overlay-bar"
+          class="progress-bar progress-bar-striped progress-bar-animated"
+          style="width: 0%"
+        ></div>
+      </div>
+    </div>
 
     
   </body>
